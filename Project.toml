@@ -1,0 +1,8 @@
+name = "MuJoCoSimulator"
+uuid = "9c2320b1-cac6-44d0-8809-43973c511e20"
+authors = ["Tarun <tpunnoose@users.noreply.github.com>"]
+version = "0.1.0"
+
+[deps]
+LyceumMuJoCo = "48b9757e-04b8-4dbf-b6ed-75c13d9e4026"
+LyceumMuJoCoViz = "409fd311-7925-44f6-a514-6be572b34fdd"
