@@ -101,13 +101,11 @@ function simulate(simulator::Simulator, control!)
                 # Publish simulation data LCM message. Sim data does not include any latency effects
                 if t - last_sim_data_t > CONTROL_DT
                     # ground truth states
-
-                    # FIXME
-                    q = SVector{simulator.n+1}([s.d.qpos[1:7]; s.d.sensordata[7:18]])
-                    q̇ = SVector{simulator.n}([s.d.qvel[1:6]; s.d.sensordata[19:30]])
+                    q = SVector{simulator.n+1}(s.d.qpos)
+                    q̇ = SVector{simulator.n}(s.d.qvel)
 
                     try
-                        @time control!(actuator_torques, q, q̇, t)
+                        control!(actuator_torques, q, q̇, t)
                     catch err
                         for (exc, bt) in Base.catch_stack()
                            showerror(stdout, exc, bt)
