@@ -4,5 +4,9 @@ authors = ["Tarun <tpunnoose@users.noreply.github.com>"]
 version = "0.1.0"
 
 [deps]
-LyceumMuJoCo = "48b9757e-04b8-4dbf-b6ed-75c13d9e4026"
-LyceumMuJoCoViz = "409fd311-7925-44f6-a514-6be572b34fdd"
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+GLFW = "f7f18e0c-5ee9-5ccd-a5bf-e8befd85ed98"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+MuJoCo = "7528ae0c-c4f8-11e8-159b-614449536536"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+YAML = "ddb6d928-2868-570f-bddf-ab3f9cf99eb6"

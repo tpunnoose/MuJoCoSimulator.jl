@@ -1,6 +1,5 @@
 using LinearAlgebra
 using StaticArrays
-using Rotations
 using DataStructures
 
 import YAML
